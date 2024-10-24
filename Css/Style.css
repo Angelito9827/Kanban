@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  background-image: url(../../Image/Moto.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-position: bottom;
+  padding: 20px;
+}
+main h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: rgba(23, 131, 179, 0.53);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#kanban {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.column {
+  background-color: rgba(240, 248, 255, 0.727);
+  padding: 10px;
+  border-radius: 20px;
+  width: 19%;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 20px;
+}
+.column:last-child {
+  margin-right: 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 15px;
+  padding: 10px;
+}
+.card:hover {
+  background-color: rgba(17, 117, 162, 0.53);
+  cursor: pointer;
+  color: white;
+}
+.card:hover .close i {
+  color: black;
+}
+.card:hover .tag i {
+  color: rgb(3, 76, 110);
+}
+.card .close {
+  color: red;
+  float: right;
+}
+.card .tag {
+  display: inline-block;
+  color: white;
+}
+.card .tag.front {
+  background-color: rgb(7, 187, 7);
+  border-radius: 50px;
+  padding: 5px;
+}
+.card .tag.back {
+  background-color: rgb(251, 49, 49);
+  border-radius: 50px;
+  padding: 5px;
+}
+.card .tag.device {
+  background-color: rgb(255, 225, 0);
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+/*# sourceMappingURL=Style.css.map */

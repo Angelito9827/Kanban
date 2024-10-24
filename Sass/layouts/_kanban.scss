@@ -1,0 +1,22 @@
+@use '../utilities/variables' as var;
+
+#kanban {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  
+  .column {
+    background-color: var.$color-blue-light;
+    padding: 10px;
+    border-radius: 20px;
+    width: 19%;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 20px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  

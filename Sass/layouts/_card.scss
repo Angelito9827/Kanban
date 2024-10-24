@@ -1,0 +1,47 @@
+@use "../utilities/variables" as var;
+@use "../utilities/mixins" as mix;
+
+.card {
+  background-color: var.$color-white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: var.$font-size-base;
+  padding: 10px;
+
+  &:hover {
+    background-color: var.$color-blue-hover;
+    cursor: pointer;
+    color: var.$color-white;
+    .close i {
+      color: black;
+    }
+    .tag i {
+      color: rgb(3, 76, 110);
+    }
+  }
+
+  .close {
+    color: var.$color-close;
+    float: right;
+  }
+
+  .tag {
+    display: inline-block;
+    color: var.$color-white;
+
+    &.front {
+      @include mix.tag-style(var.$color-tag-front);
+    }
+
+    &.back {
+      @include mix.tag-style(var.$color-tag-back);
+    }
+
+    &.device {
+      @include mix.tag-style(var.$color-tag-device);
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}
