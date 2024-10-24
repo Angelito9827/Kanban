@@ -15,24 +15,23 @@ main {
     width: 100%;
     min-height: 100vh;
     background-position: bottom;
-    position: relative;
     padding: 20px;
 }
 
 #kanban {
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 }
 
 h1 {
     color: white;
     font-weight: 400;
     font-size: 25px;
-    background-color: rgb(17 117 162 / 53%);
+    background-color: rgba(23, 131, 179, 0.53);
     border-radius: 10px;
     padding: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     width: fit-content;
 }
 
@@ -40,10 +39,14 @@ h1 {
     background-color: rgba(240, 248, 255, 0.727);
     padding: 10px;
     border-radius: 20px;
-    width: 18%;
-    margin-left: 25px;
+    width: 19%;
+    vertical-align: top;
     display: inline-block;
-    vertical-align: top;   
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
 }
 
 .card {
@@ -58,11 +61,16 @@ h1 {
 .card:hover {
     background-color: rgb(17 117 162 / 53%);
     cursor: pointer;
+    color: white;
 }
 
 .tag {
     display: inline-block;
     color: white;
+}
+
+.card:hover .tag i {
+    color:rgb(3, 76, 110);
 }
 
 .tag.front {
@@ -90,4 +98,8 @@ h1 {
 .close {
     color: red;
     float: right;
+}
+
+.card:hover .close i {
+    color: black;
 }
